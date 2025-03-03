@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Booking Confirmation</title>
+    <script>
+        function submitReview(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Review has been submitted! Redirecting to home...");
+            window.location.href = "index.html"; // Redirect after alert
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -22,7 +29,7 @@
     <p>Your grooming appointment has been successfully booked.</p>
 
     <h3>Leave a Review</h3>
-    <form action="index.html" method="get">
+    <form onsubmit="submitReview(event)">
         <label for="review">Tell us about your experience:</label>
         <textarea id="review" name="review" rows="4" cols="50"></textarea>
         <br>
