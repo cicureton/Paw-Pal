@@ -250,6 +250,85 @@ h3 {
     background-color: #B88448;
 }
 
+#submit-review {
+    background-color: #EFD780;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#submit-review h3 {
+    font-size: 1.5em;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+#submit-review form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#submit-review label {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #4A4A4A;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+
+#submit-review textarea,
+#submit-review select {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #B88448;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.submit-review {
+    font-family: inherit;
+    background-color: #DBA159;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.submit-review:hover {
+    background-color: #B88448;
+}
+
+#confirmation {
+    background-color: #EFD780;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#confirmation h2 {
+    font-size: 2em;
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+#confirmation p {
+    font-size: 1.2em;
+    color: #4A4A4A;
+}
 
 
 footer {
