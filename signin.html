@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Paw Pal - Sign In</title>
+    <script>
+        function redirectToHome(event) {
+          event.preventDefault();
+          window.location.href = 'index.html';
+        }
+    </script>
+</head>
+
+<body>
+<header>
+    <h1>Paw Pal</h1>
+</header>
+
+<section id="signin">
+    <h2>Welcome to Paw Pal</h2>
+    <p>Sign in or create an account to continue.</p>
+
+    <div class="auth-container">
+        <form onsubmit="redirectToHome(event)">
+            <label for="username">Username or Email:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="auth-button">Sign In</button>
+        </form>
+
+        <p>New to Paw Pal? <a href="signup.html">Create an account</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>Paw Pal &copy; 2025</p>
+</footer>
+</body>
+</html>
