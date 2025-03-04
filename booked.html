@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Booking Confirmation</title>
+    <script>
+        function submitReview(event) {
+            event.preventDefault(); // Prevent form submission
+            alert("Review has been submitted! Redirecting to home...");
+            window.location.href = "index.html"; // Redirect after alert
+        }
+    </script>
+</head>
+<body>
+<header>
+    <h1>Paw Pal</h1>
+    <nav>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="services.html">Browse Services</a></p>
+        <p><a href="profile.html">Profile</a></p>
+        <p><a href="signin.html">Sign Out</a></p>
+    </nav>
+</header>
+
+<section id="confirmation">
+    <h2>Appointment Booked!</h2>
+    <p>Your grooming appointment has been successfully booked.</p>
+
+    <h3>Leave a Review</h3>
+    <form onsubmit="submitReview(event)">
+        <label for="review">Tell us about your experience:</label>
+        <textarea id="review" name="review" rows="4" cols="50"></textarea>
+        <br>
+        <label for="rating">Rate the service:</label>
+        <select id="rating" name="rating">
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Very Good</option>
+            <option value="3">3 - Good</option>
+            <option value="2">2 - Fair</option>
+            <option value="1">1 - Poor</option>
+        </select>
+        <br>
+        <button type="submit" class="submit-review">Submit Review</button>
+    </form>
+</section>
+
+<footer>
+    <p>Paw Pal &copy; 2025</p>
+</footer>
+</body>
+</html>
