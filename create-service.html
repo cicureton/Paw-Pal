@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Paw Pal - Home Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Paw Pal</h1>
+        <nav>
+            <p><a href="customer-view-index.html">Home</a></p>
+            <p><a href="customer-view-services.html">Browse Services</a></p>
+            <p><a href="profile.html">Profile</a></p>
+            <p><a href="index.html">Sign Out</a></p>
+        </nav>
+    </header>
+    
+    <section id="create-services">
+        <h2>Choose a Service</h2>
+        <label for="select-service">Select Service:</label>
+        <select id="choose-service">
+            <option>Dog Walking</option>
+            <option>Pet Sitting</option>
+            <option>Grooming</option>
+        </select>
+        
+        <label for="availability">Select Availability:</label>
+        <input type="date" id="availability">
+        
+        <label for="rate">Set Your Pay Rate ($/hr):</label>
+        <input type="number" id="rate">
+        
+        <button id="set-service">Set Service</button>
+    </section>
+    
+    <footer>
+        <p> Paw Pal &copy; 2025</p>
+    </footer>
+
+</body>
+
+</html>
