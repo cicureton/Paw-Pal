@@ -1,0 +1,60 @@
+
+#booking {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F7FFDD;
+}
+
+#booking h2 {
+    font-size: 2em;
+    color: #4A4A4A;
+    margin-bottom: 30px;
+}
+
+.booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Individual booking card */
+.booking-card {
+    background-color: #EFD780;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.booking-header h3 {
+    margin-top: 0;
+    color: #4A4A4A;
+    font-size: 1.5em;
+}
+
+.booking-info p {
+    font-size: 1.1em;
+    margin: 8px 0;
+    color: #4A4A4A;
+}
+
+.booking-actions {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.booking-actions a {
+    color: #DBA159;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.2s ease;
+}
+
+.booking-actions a:hover {
+    color: #B88448;
+    text-decoration: underline;
+}
