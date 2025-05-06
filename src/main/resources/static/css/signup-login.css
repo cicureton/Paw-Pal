@@ -1,0 +1,150 @@
+/* signup-login.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DBA159;
+    color: #4A4A4A;
+}
+
+header {
+    background-color: #DBA159;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav p {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.3em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #4A4A4A;
+}
+
+form {
+    background-color: #EFD780;
+    padding: 30px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #4A4A4A;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #B88448;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button,
+.login-button {
+    font-family: inherit;
+    background-color: #DBA159;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover,
+.login-button:hover {
+    background-color: #B88448;
+}
+
+.login-container {
+    background-color: #F7FFDD;
+    padding: 40px 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    padding-left: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B88448;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.signup-links {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.signup-links a {
+    color: #4A4A4A;
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    background-color: #fff3f3;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
