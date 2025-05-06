@@ -3,7 +3,7 @@
 - Get the project
     - clone  
         ```
-      git clone https://github.com/uncg-csc340/sp25-mvc-demo2.git
+      git clone [https://github.com/cicureton/Paw-Pal.git]
         ``` 
     - OR download zip.
 - Open the project in IntelliJ.
