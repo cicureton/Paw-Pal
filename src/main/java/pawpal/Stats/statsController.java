@@ -106,7 +106,20 @@ public class statsController {
 
 
 
+    @PostMapping("/reviews/delete/{id}")
+    public String deleteReview(@PathVariable int id) {
+        reviewRepository.deleteById(id);
+        return "redirect:/stats/reviews";
+    }
 
+    @PostMapping("/users/ban/{id}")
+    public String banUser(@PathVariable int id) {
+        userRepository.findById(id).ifPresent(user -> {
+            user.setStatus("BANNED");
+            userRepository.save(user);
+        });
+        return "redirect:/stats/users";
+    }
 
     @DeleteMapping("/{id}")
     public void deleteStatisticsById(@PathVariable int id) {
